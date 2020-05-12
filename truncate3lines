@@ -1,0 +1,4 @@
+for file in ../data/processed/*
+do
+	tail -n +4 "$file" > "$file.tmp" && mv "$file.tmp" "$file"
+done
