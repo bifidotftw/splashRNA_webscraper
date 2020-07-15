@@ -26,21 +26,7 @@ for i in files:
 
 #print(df_collection)
 
+gene_shRNA = df_collection['Gene Symbol'] + '.' + df_collection['shRNA.name'].str.split('_', 2, expand=True)[2]
+df_collection['gene_shRNA'] = gene_shRNA
+
 df_collection.to_excel(path_data + '97mer.xlsx', index=False)
-
-
-    ## Get list of 97mers, 5 in total
-    #list_97mer = df['97mer.construct'].tolist()
-    #df_collection[entrezID] = list_97mer
-
-
-#df_collection = df_collection.T # Transpose table
-#
-## Get list of gene names and set entrezID as index for join
-#
-#df_collection = df_collection.join(df_genes, how='inner')
-#
-## Reorder columns
-#df_collection = df_collection[['HGNC', 0, 1, 2, 3, 4]]
-#print(df_collection)
-#
