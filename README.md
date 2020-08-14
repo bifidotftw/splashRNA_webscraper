@@ -5,9 +5,9 @@ Folder structure:\
 +-- script\
 
 1. Convert HGNC symbols to entrezID and save to data/genes.xlsx\
-https://www.ensembl.org/biomart/martview
-1.1 Ensembl Genes 100
-1.2 Human genes (GRCh38.p13)
+https://www.ensembl.org/biomart/martview\
+1.1 Ensembl Genes 100\
+1.2 Human genes (GRCh38.p13)\
 1.3 Filter/Gene/Input external references ID list: HGNC symbol(s) [e.b.A1BG]\
 1.4 Attributes/External References: HGNC symbol, NCBI gene (formerly Entrezgene) ID\
 1.5 Download results as "genes.xlsx"
