@@ -13,7 +13,7 @@ https://www.ensembl.org/biomart/martview
 	5. Download results as "genes.xlsx"
 2. Rename columns to "entrezID" and "HGNC"
 3. Check for missing entries in "entrezID" and replace manually
-4. webscraper.py: Downloads csv file from splashRNA\
-5. Copy files from "data/raw" to "data/processed"\
-6. truncate3lines: bash script to remove first 3 lines from all csv files in "data/processed"\
+4. webscraper.py: Downloads csv file from splashRNA
+5. Copy files from "data/raw" to "data/processed"
+6. truncate3lines: bash script to remove first 3 lines from all csv files in "data/processed"
 7. datamerger.py: Compile individual csv files into single file. Creates "data/97mer.xlsx"
